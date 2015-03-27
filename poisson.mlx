@@ -1,0 +1,18 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Surface Reconstruction: Poisson">
+  <Param type="RichInt" value="9" name="OctDepth"/>
+  <Param type="RichInt" value="6" name="SolverDivide"/>
+  <Param type="RichFloat" value="1" name="SamplesPerNode"/>
+  <Param type="RichFloat" value="1" name="Offset"/>
+ </filter>
+ <filter name="Select Faces with edges longer than...">
+  <Param type="RichDynamicFloat" value="1" min="0" name="Threshold" max="12.325"/>
+ </filter>
+ <filter name="Delete Selected Faces and Vertices"/>
+ <filter name="Remove Isolated pieces (wrt Face Num.)">
+  <Param type="RichInt" value="500" name="MinComponentSize"/>
+ </filter>
+ <filter name="Select non Manifold Edges "/>
+ <filter name="Delete Selected Faces and Vertices"/>
+</FilterScript>
